@@ -1,0 +1,19 @@
+/* font */
+@font-face { font-family: estre_0; src: url('../fonts/estre_0.ttf'); } 
+html {
+    position: relative;
+    min-height: 100%;
+}
+body{
+    font-family: estre_0;
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    background-color: #f4f6f8;
+    margin-bottom: 60px;
+    overflow-x: hidden;
+}
+.nopadding{
+    padding: 0px !important;
+}
+
