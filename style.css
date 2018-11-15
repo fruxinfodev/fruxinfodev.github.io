@@ -1,0 +1,467 @@
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background: #fff;
+  font-family: 'Comfortaa', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body.light {
+  background: #c4c4c4;
+}
+
+body.dark, body.fullpage {
+  background: #000;
+}
+
+body.particles-bg {
+  background: url(../img/bg-dark.jpg) center center no-repeat #000;
+  background-size: cover;
+}
+
+#bg {
+  -webkit-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  height: 100%;
+  left: 0;
+  opacity: 0.8;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+body.clouds #bg {
+  background: url('skyscrapper.jpg') center center no-repeat #fff;
+  background-size: cover;
+  opacity: 1;
+}
+
+#bg:before {
+  display: block;
+  position: absolute;
+  z-index: 3;
+  content: "";
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: url('overlay.svg') center center no-repeat;
+  background-size: cover;
+}
+
+#bg.overlay:before {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+body.dark #bg.overlay:before {
+  opacity: 0.8;
+}
+
+body.youtube-background #bg.overlay:before, body.clouds #bg.overlay:before {
+  opacity: 0.4;
+}
+
+body.particles-bg #bg.overlay:before {
+  opacity: 0.4;
+}
+
+#bg div {
+  -webkit-transition: opacity 3s ease, visibility 3s;
+  transition: opacity 3s ease, visibility 3s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-size: cover;
+  background-position: center left;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 130%;
+}
+
+#bg div.visible {
+  -webkit-animation: bg 45s linear infinite;
+  animation: bg 45s linear infinite;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+#bg div.visible.top {
+  z-index: 2;
+}
+
+@media screen and (max-width: 1280px) {
+  #bg div.visible {
+    -webkit-animation: bg 29.25s linear infinite;
+    animation: bg 29.25s linear infinite;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  #bg div.visible {
+    -webkit-animation: bg 18s linear infinite;
+    animation: bg 18s linear infinite;
+  }
+}
+
+#bg div:only-child {
+  -webkit-animation-direction: alternate !important;
+  animation-direction: alternate !important;
+}
+
+body.is-loading #bg {
+  opacity: 0;
+}
+
+@-webkit-keyframes bg {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-25%);
+    transform: translateX(-25%);
+  }
+}
+
+@keyframes bg {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-25%);
+    transform: translateX(-25%);
+  }
+}
+
+.youtube-background #bg:after {
+  display: block;
+  position: absolute;
+  z-index: 2;
+  content: "";
+  width: 100%;
+  opacity: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+
+
+/*-------------------------------------------------------*/
+/* Content and countdown styles */
+/*-------------------------------------------------------*/
+
+.countdown {
+  padding: 20px 10px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 800px;
+  opacity: 1;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+}
+
+.countdown.initial {
+  opacity: 0;
+}
+
+.countdown .logo-holder {
+  display: block;
+  margin: 0 auto 15px;
+  text-align: center;
+  font-family: 'Satisfy', cursive;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  font-size: 50px;
+  line-height: 96px;
+}
+
+.countdown .logo-holder span {
+  width: 104px;
+  height: 104px;
+  border: 4px solid #fff;
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+body.light .countdown .logo-holder {
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+body.light .countdown .logo-holder span {
+  color: #444;
+  border-color: #444;
+  -webkit-box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
+          box-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.countdown .logo {
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.countdown h1 {
+  font-size: 54px;
+  font-family: 'Satisfy', cursive;
+  font-weight: 600;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 0;
+  margin-bottom: 0px;
+  line-height: 1;
+}
+
+.countdown p {
+  font-size: 20px;
+  clear: both;
+  text-align: center;
+  margin: 0;
+  padding: 0px;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  font-weight: 300;
+}
+
+body.fullpage .countdown {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+  position: static;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+@media (max-width: 640px) {
+  .countdown h1 {
+    font-size: 36px;
+  }
+  .countdown p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .countdown h1 {
+    font-size: 30px;
+  }
+}
+
+body.light .countdown {
+  color: #444;
+}
+
+body.light .countdown h1, body.light .countdown p {
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+#countdown {
+  padding: 15px 0;
+  margin: 15px auto;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  list-style: none;
+  text-align: center;
+  display: block;
+  max-width: 615px;
+}
+
+#countdown li {
+  display: inline-block;
+  text-align: center;
+  float: none;
+  width: auto;
+  padding: 0px 20px;
+  font-size: 18px;
+  font-weight: 300;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#countdown li span {
+  font-size: 30px;
+  display: inline-block;
+  font-weight: 700;
+  margin: 0px 0px 0px 0px;
+  min-width: 42px;
+}
+
+@media (max-width: 640px) {
+  #countdown li {
+    font-size: 15px;
+    padding: 0px 10px;
+  }
+  #countdown li span {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #countdown li {
+    padding: 0px 5px;
+    font-size: 14px;
+  }
+  #countdown li span {
+    font-size: 16px;
+    min-width: 22px;
+  }
+}
+
+body.light #countdown {
+  border-color: #444;
+}
+
+body.light #countdown li {
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.actions {
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin-top: 15px;
+  font-weight: 400;
+}
+
+.actions a {
+  display: inline-block;
+  font-size: 15px;
+  padding: 10px 16px;
+  margin-left: 2px;
+  margin-right: 5px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-radius: 2px;
+}
+
+.actions a.subscribe {
+  background: #36bf96;
+  color: #fff;
+  border-color: #36bf96;
+}
+
+body.light .actions a.subscribe {
+  color: #fff;
+  border-color: #36bf96;
+}
+
+.actions a:hover, .actions a:focus {
+  text-decoration: none;
+  background: #fff;
+  border-color: #fff;
+  color: #222;
+  text-shadow: none;
+}
+
+body.light .actions a {
+  color: #444;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
+  border-color: #444;
+}
+
+body.light .actions a:hover, body.light .actions a:focus {
+  background: #fff;
+  border-color: #fff;
+  color: #222;
+  text-shadow: none;
+}
+
+@media (max-width: 640px) {
+  .actions {
+    padding-top: 18px;
+  }
+  .actions a {
+    padding: 8px 10px;
+    font-size: 15px;
+  }
+}
+
+
+@-webkit-keyframes cloudAnimation {
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes cloudAnimation {
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+#clouds {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+}
+
+#clouds img {
+  width: 100%;
+  left: 0;
+  top: 0;
+  position: absolute;
+  opacity: 0.5;
+}
+
+#clouds img.cloud1 {
+  -webkit-animation: cloudAnimation 25s infinite linear;
+  animation: cloudAnimation 25s infinite linear;
+}
+
+#clouds img.cloud2 {
+  -webkit-animation: cloudAnimation 35s infinite linear;
+  animation: cloudAnimation 35s infinite linear;
+}
+
+#clouds img.cloud3 {
+  -webkit-animation: cloudAnimation 45s infinite linear;
+  animation: cloudAnimation 45s infinite linear;
+  opacity: 0.3;
+}
+
+#clouds img.cloud4 {
+  -webkit-animation: cloudAnimation 55s infinite linear;
+  animation: cloudAnimation 55s infinite linear;
+  opacity: 0.3;
+}
+
