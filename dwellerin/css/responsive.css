@@ -30,6 +30,10 @@
 	list-style: none;
     padding: 0px 15px;
 }
+
+.property-img{
+    height: 361px;
+}
 }
 
 @media only screen and (max-width: 800px) {
@@ -105,8 +109,8 @@
 .side-menu .sp_col.collapse.show{
      display: block!important;
 }
-.property-img{
-    height: 361px;
+.map-div .tab-view ul li {
+    padding: 20px 16px;
 }
 }
 @media only screen and (max-width: 640px) {
@@ -120,10 +124,29 @@
 
 }
 @media only screen and (max-width: 480px) {
-   
+
 }
 @media only screen and (max-width: 420px) {
-
+.map-div .absolute-dropdown1 {
+    position: absolute;
+    top: 13%;
+    left: 7%;
+}
+.map-div .absolute-dropdown2{
+    position: absolute;
+    top: 19%;
+    left: 7%;
+}
+.map-div .absolute-dropdown3{
+    position: absolute;
+    top: 25%;
+    left: 7%;
+}
+.map-div .absolute-dropdown4{
+    position: absolute;
+    top: 31%;
+    left: 7%;
+}
 }
 @media only screen and (max-width: 400px) {
    
