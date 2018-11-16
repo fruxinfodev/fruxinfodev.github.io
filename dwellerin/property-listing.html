@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dwellerin</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/bootstrap-datepicker.css" rel="stylesheet">
+         <link href="css/slick.min.css" rel="stylesheet">
+        <link href="css/custome.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <link href="css/animate.min.css" rel="stylesheet">
+        <link href="img/favicon.png" rel="shortcut icon" />
+        <script src="js/jquery-1.11.1.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery.flexisel.js"></script>
+        <script src="js/myjs.js"></script>
+    </head>
+    <body>
+          
+        <section class="header sp_header">
+                <nav class="navbar navbar-expand-md">
+                  <a class="navbar-brand logo" href="#">Dwellerin</a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="">
+                            <div class="input-group-append footer-search  ">
+                              <button class="btn" type="submit"><i class="fa fa-search"></i></button> 
+                            </div>
+                        </div>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">List Your Property</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Create Account | Login</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Help</a>
+                      </li>
+                      <li class="nav-item right-zero">
+                        <a class="nav-link request" href="#">+91 8449346393</a>
+                      </li>    
+                    </ul>
+                  </div>  
+                </nav>
+        </section>
+
+        <section class="section-padding Property-listing">
+            <div class="row d-flex justify-content-center">
+            <div class="col-lg-11 col-md-11 col-12">
+              <ol class="breadcrumb mb-4">
+                <li class="breadcrumb-item"><a href="#" class="">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">List Your Property</a></li>
+                <li class="breadcrumb-item active"><a href="#">Apartment</a></li>
+              </ol>
+              <div class="row">
+                  <div class="col-md-12 col-12 mb-2">
+                      <div class="border box-text p-0">
+                        <div class="tab-view"> 
+                          <ul class="nav nav-tabs">
+                            <li class="active">
+                              <a  href="#1" data-toggle="tab" class="active ">Basic info </a>
+                            </li>
+                            <li>
+                              <a href="#2" data-toggle="tab">Layout & Pricing</a>
+                            </li>
+                            <li>
+                              <a href="#3" data-toggle="tab">Facilities & Services</a>
+                            </li>
+                            <li>
+                              <a href="#4" data-toggle="tab">Aminities</a>
+                            </li>
+                            <li>
+                              <a href="#5" data-toggle="tab">Photos</a>
+                            </li>
+                            <li>
+                              <a href="#6" data-toggle="tab">Polices</a>
+                            </li>
+                            <li>
+                              <a href="#7" data-toggle="tab">Payments</a>
+                            </li>
+                          </ul>
+
+                          <div class="tab-content">
+                            <div class="tab-pane active" id="1">
+                                <h6>Welcome XXXXXX!</h6>
+                                <p>Start by telling us your property's name, contact details, and address.</p>
+                              <div class="row form-row">
+                                <div class="col-md-9 col-12">
+                                  <div class="p-3 border">
+                                    <form>
+                                      <h6>What's the name of your property?</h6>
+                                      <div class="row">
+                                        <div class="col-md-6 col-12">
+                                          <div class="form-group mt-3">
+                                            <input type="text" class="form-control" name="">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <p class="mb-0">Guests will see this name when they search for a place to stay.</p>
+                                    </form>
+                                  </div>
+                                  <div class="p-3 mt-4 mb-2 border">
+                                    <form>
+                                      <h6>What are the contact details for this property?</h6>
+                                      <div class="row">
+                                        <div class="col-md-6 col-12">
+                                          <div class="form-group mt-3">
+                                            <label>Name</label>
+                                            <input type="text" class="form-control" name="">
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6 col-12">
+                                          <div class="form-group mt-3">
+                                            <label>Contact</label>
+                                            <input type="text" class="form-control" name="">
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <p class="mb-0">Do you own multiple apartments, or are you part of a property management company or group?</p>
+                                      <ul class="sp_radio">
+                                        <li class="border">
+                                          <label class="container">Yes
+                                            <input type="radio" checked="checked" name="radio">
+                                            <span class="checkmark"></span>
+                                          </label>                                          
+                                        </li>
+                                        <li class="border">
+                                          <label class="container">No
+                                            <input type="radio" name="radio">
+                                            <span class="checkmark"></span>
+                                          </label>                                          
+                                        </li>
+                                      </ul>
+                                    </form>
+                                  </div> 
+                                </div>
+                                <div class="col-md-3 col-12">
+                                  <div class="mini-square">
+                                    <p>After you complete registration you'll be able to make changes to your listing before it goes live.</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <button class="btn my-btn mt-4">Continue</button>
+                            </div>
+                            <div class="tab-pane" id="2">
+                              <h6>Welcome XXXXXX!</h6>
+                              <p>Start by telling us your property's name, contact details, and address.</p>
+                            </div>
+                            <div class="tab-pane" id="3">
+                              <h6>Welcome XXXXXX!</h6>
+                            </div>
+                            <div class="tab-pane" id="4">
+                              <h6>Welcome XXXXXX!</h6>
+                              <p>Start by telling us your property's name, contact details, and address.</p>
+                            </div>
+                            <div class="tab-pane" id="5">
+                              <h6>Welcome XXXXXX!</h6>
+                            </div>
+                            <div class="tab-pane" id="6">
+                              <h6>Welcome XXXXXX!</h6>
+                              <p>Start by telling us your property's name, contact details, and address.</p>
+                            </div>
+                            <div class="tab-pane" id="7">
+                              <h6>Welcome XXXXXX!</h6>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                  </div>
+              </div>
+            </div>
+            </div>
+        </section>
+        
+        <section class="footer pt-0">
+            <div class="row d-flex justify-content-center border-bottom">
+                <div class="col-lg-11 col-md-12">
+                    <div class="row mt-3 mb-3">
+                        <div class="col-md-3 col-sm-6 col-6 mt-5">
+                            <button class="btn my-btn">+91 8449346393</button>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12 b-right border-left mt-2 text-left m-zero">
+                            <ul class="m-zero ml-3">
+                                <li>
+                                   <a href="#"> About us</a>
+                                </li>
+                                <li>
+                                   <a href="#"> Team / Careers</a>
+                                </li>
+                                <li>
+                                   <a href="#"> Blog</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12 b-right border-right mt-2 text-left m-zero">
+                            <ul class="m-zero">
+                                <li>
+                                   <a href="#"> Support</a>
+                                </li>
+                                <li>
+                                   <a href="#"> Official Blog</a>
+                                </li>
+                                <li>
+                                   <a href="#"> Press Kit</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-12 mt-2 b-right text-left m-zero">
+                            <ul class="m-zero">
+                                <li>
+                                   <a href="#"> Privacy Policy</a>
+                                </li>
+                                <li>
+                                   <a href="#"> Guest Policy</a>
+                                </li>
+                                <li>
+                                   <a href="#">terms & Condition</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center border-bottom">
+                <div class="col-md-11">
+                    <div class="row mt-3 mb-3">
+                        <div class="col-md-5 text-right">
+                            <h6 class="mt-3">Subscribe for exciting deals & offer</h6>
+                        </div>
+                        <div class="col-md-5">
+                            <form>
+                              <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="">
+                                <div class="input-group-append footer-search  ">
+                                  <button class="btn" type="submit"><i class="fa fa-search"></i></button> 
+                                </div>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center border-bottom">
+                <div class="col-md-11">
+                    <div class="row mt-3 mb-3">
+                        <div class="col-md-12 text-center">
+                            <h5 style="color: #7e7d7d">Partners</h5>
+                            <p class="mt-3 mb-0">
+                              <a href="#">Partner</a> / 
+                              <a href="#">Partner</a> / 
+                              <a href="#">Partner</a> / 
+                              <a href="#">Partner</a> / 
+                              <a href="#">Partner</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-11">
+                    <div class="row mt-3 mb-3">
+                        <div class="col-md-3 col-sm-3 col-12">
+                           <a href="#"><img src="img/insta.png" class="img-fluid mt-3 mr-1"></a>
+                           <a href="#"><img src="img/fb.png" class="img-fluid mt-3 mr-1"></a>
+                           <a href="#"><img src="img/twitter.png" class="img-fluid mt-3 mr-1"></a>
+                           <a href="#"><img src="img/linkedin.png" class="img-fluid mt-3 mr-1"></a>
+                           <a href="#"><img src="img/app.png" class="img-fluid mt-3 mr-1"></a>
+                        </div>
+                        <div class="col-md-6 col-sm-3 col-12 text-center">
+                            <a class="logo" href="#">Dwellerin</a>
+                        </div>
+                        <div class="col-md-3 col-sm-3 col-12">
+                           <p class="pt-3 text-right">© 2018  <a href="#"> igloo </a>- All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/wow.min.js"></script>
+        <script src="js/myjs.js"></script>
+        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+       
+    </body>
+</html>
+
+
+

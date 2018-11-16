@@ -51,7 +51,7 @@ a:hover{
 .header{
 	margin-top: 2%;
 	padding: 0% 4%;
-	font-family: poppins-bold;
+	font-family: poppins-regular;
 }
 .navbar-collapse{
 	/*margin-left: 20%;*/
@@ -173,7 +173,10 @@ a:hover{
 .slider .dropdown-menu{
 	top: 10px!important;
     width: 216px;
-    left: -16px!important;
+    left: -3px!important;
+}
+.searchbar-btn:hover{
+    box-shadow: 0px 0px 10px #12746d;
 }
 
 
@@ -318,7 +321,7 @@ ul
 }
 .my-btn{
     background-color: #ff5a5f;
-    color: #fff;
+    color: #fff!important;
     font-size: 13px;
     padding: 10px 20px;
 }
@@ -761,6 +764,8 @@ ul.star li span{
     border-bottom: 1px solid #ced4da;
     border-radius: 0px;
     background-color: inherit;
+    padding-left: 0px;
+    font-size: 14px;
 }
 .visit-form ul{
     width: 100%;
@@ -775,8 +780,21 @@ ul.star li span{
 }
 .visit-form .tab-content{
     background-color: #faf9f9;
-    padding: 20px 10px;
+    padding: 30px;
 }
+.visit-form .tab-content img{
+    height: 30px;
+    width: 30px;
+}
+.visit-form .form-control::placeholder{
+    color: #a4a3a3;
+}
+
+/*
+.visit-form .nav-pills li.active{
+    background-color: #14756e;
+    color: #fff;
+}*/
 
 
 
