@@ -83,7 +83,8 @@
                       <p class="mt-4">271 students saved this property</p>
                   </div>
                   <div class="col-md-6 col-sm-12 col-12">
-                      <img src="img/property-page-1.jpg" class="img-fluid property-page-img">
+                    <div class="property-img"></div>
+                      <!-- <img src="img/property-page-1.jpg" class="img-fluid property-page-img"> -->
                   </div>                   
                   <div class="col-md-3 col-sm-12 col-12 p-4">
                      <p class="request text-center mb-0">View Rooms</p>
@@ -102,7 +103,8 @@
                         </div>
                      </div>
                      <div class=" light-box mt-3"> 
-                        <h6 class="mb-0"><span class="fa fa-certificate mr-2"></span> Price Match Promise</h6>
+                        <img src="img/certy.png" class="img-fluid mr-2" style="float: left">
+                        <h6 class="mb-0 pt-1">Price Match Promise</h6>
                      </div>
                      <img src="img/offer.png" class="img-fluid mt-3 mb-2">
                      <p>Share this property</p>
@@ -199,12 +201,98 @@
                                   </div>                                
                                 </div>
                                 <div class="col-md-1 col-12">
-                                </div>
-                                <div class="col-md-4 col-12">
-                                  <div class="mini-square">
-                                    <p>After you complete registration you'll be able to make changes to your listing before it goes live.</p>
-                                  </div>
-                                </div>
+                                </div>                                
+                                <div class="col-md-4 col-sm-12 col-12 visit-form">
+                                    <ul class="nav nav-pills">
+                                      <li class="border-right"><a data-toggle="pill" href="#visit" class="active show">Visit the House</a></li>
+                                      <li><a data-toggle="pill" href="#book">Book Now</a></li>
+                                    </ul>
+                                    <div class="tab-content review">
+                                      <div id="visit" class="tab-pane fade in active show">
+                                        <div class="form-group">
+                                          <input type="text" name="" class="form-control" placeholder="Name*">
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="text" name="" class="form-control" placeholder="Phone*">
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="text" name="" class="form-control" placeholder="Email*">
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-6">
+                                            <div class="form-group">
+                                              <label for="sel1"><span class="fa fa-calendar mr-1"></span>Pick a day</label>
+                                              <select class="form-control" id="sel1">
+                                                <option>Today</option>
+                                                <option>Tomorrow</option>                                
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-6">
+                                            <div class="form-group">
+                                              <label for="sel1"><span class="fa fa-clock-o mr-1"></span>Pick a time</label>
+                                              <select class="form-control" id="sel1">
+                                                <option>2:00 PM</option>
+                                                <option>3:00 PM</option>                                
+                                              </select>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div class="form-group" style="position: relative;">
+                                          <input type="text" name="" class="form-control" placeholder="Referal code ( if any)">
+                                          <a href="#" data-toggle="tooltip" title="Schedule a Visit!"><span class="fa fa-info-circle pull-right info-tooltip"></span></a>
+                                        </div>
+                                        <h6 class="request" style="font-size: 1rem;">Schedule a Visit
+                                          <a href="#" data-toggle="tooltip" title="Schedule a Visit!"><span class="fa fa-info-circle pull-right"></span></a>
+                                        </h6>
+                                        <div class="media mt-4">
+                                          <img class="img-fluid mr-3" src="img/house-rent.png">
+                                          <div class="media-body">
+                                            <h6 class="mb-1"><b>6 people scheduled visit.</b></h6>                          
+                                            <p><b><a href="" style="color:#14756e; ">Book Now </a></b> to avoid missing out.</p>
+                                          </div>
+                                        </div>
+                                        <div class="media mt-3">
+                                          <img class="img-fluid mr-3" src="img/house-rent.png">
+                                          <div class="media-body">
+                                            <h6 class="mb-1"><b>3 Days Trial</b></h6>                          
+                                          <p>don’t like the house within 3-days of move in, you can get a refund.<br><b><a href="" style="color:#14756e; ">More Here </a></b></p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      <div id="book" class="tab-pane fade">
+                                        <div class="form-group">
+                                          <input type="text" name="" class="form-control" placeholder="Name*">
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="text" name="" class="form-control" placeholder="Phone*">
+                                        </div>
+                                        <div class="form-group">
+                                          <input type="text" name="" class="form-control" placeholder="Email*">
+                                        </div>
+                                        <div class="row">
+                                          <div class="col-6">
+                                            <div class="form-group">
+                                              <label for="sel1"><span class="fa fa-calendar mr-1"></span>Pick a day</label>
+                                              <select class="form-control" id="sel1">
+                                                <option>Today</option>
+                                                <option>Tomorrow</option>                                
+                                              </select>
+                                            </div>
+                                          </div>
+                                          <div class="col-6">
+                                            <div class="form-group">
+                                              <label for="sel1"><span class="fa fa-clock-o mr-1"></span>Pick a time</label>
+                                              <select class="form-control" id="sel1">
+                                                <option>2:00 PM</option>
+                                                <option>3:00 PM</option>                                
+                                              </select>
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                </div>                                
                               </div>
                             </div>
                             <div class="tab-pane" id="2">
@@ -281,62 +369,92 @@
                   </div>
                   <div class="col-md-4 col-sm-12 col-12 p-3 visit-form">
                       <ul class="nav nav-pills">
-                        <li class="active border-right"><a data-toggle="pill" href="#home">Visit the House</a></li>
-                        <li><a data-toggle="pill" href="#menu1">Book Now</a></li>
+                        <li class="border-right"><a data-toggle="pill" href="#visit" class="active show">Visit the House</a></li>
+                        <li><a data-toggle="pill" href="#book">Book Now</a></li>
                       </ul>
                       <div class="tab-content review">
-                        <div id="home" class="tab-pane fade in active show">
-                        <div class="form-group">
-                          <input type="text" name="" class="form-control" placeholder="Name*">
-                        </div>
-                        <div class="form-group">
-                          <input type="text" name="" class="form-control" placeholder="Phone*">
-                        </div>
-                        <div class="form-group">
-                          <input type="text" name="" class="form-control" placeholder="Email*">
-                        </div>
-                        <div class="row">
-                          <div class="col-6">
-                            <div class="form-group">
-                              <label for="sel1">Pick a day</label>
-                              <select class="form-control" id="sel1">
-                                <option>Today</option>
-                                <option>Tomorrow</option>                                
-                              </select>
+                        <div id="visit" class="tab-pane fade in active show">
+                          <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Name*">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Phone*">
+                          </div>
+                          <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Email*">
+                          </div>
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="form-group">
+                                <label for="sel1"><span class="fa fa-calendar mr-1"></span>Pick a day</label>
+                                <select class="form-control" id="sel1">
+                                  <option>Today</option>
+                                  <option>Tomorrow</option>                                
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="form-group">
+                                <label for="sel1"><span class="fa fa-clock-o mr-1"></span>Pick a time</label>
+                                <select class="form-control" id="sel1">
+                                  <option>2:00 PM</option>
+                                  <option>3:00 PM</option>                                
+                                </select>
+                              </div>
                             </div>
                           </div>
-                          <div class="col-6">
-                            <div class="form-group">
-                              <label for="sel1">Pick a time</label>
-                              <select class="form-control" id="sel1">
-                                <option>2:00 PM</option>
-                                <option>3:00 PM</option>                                
-                              </select>
+                          <div class="form-group" style="position: relative;">
+                            <input type="text" name="" class="form-control" placeholder="Referal code ( if any)">
+                            <a href="#" data-toggle="tooltip" title="Schedule a Visit!"><span class="fa fa-info-circle pull-right info-tooltip"></span></a>
+                          </div>
+                          <h6 class="request" style="font-size: 1rem;">Schedule a Visit
+                            <a href="#" data-toggle="tooltip" title="Schedule a Visit!"><span class="fa fa-info-circle pull-right"></span></a>
+                          </h6>
+                          <div class="media mt-4">
+                            <img class="img-fluid mr-3" src="img/house-rent.png">
+                            <div class="media-body">
+                              <h6 class="mb-1"><b>6 people scheduled visit.</b></h6>                          
+                              <p><b><a href="" style="color:#14756e; ">Book Now </a></b> to avoid missing out.</p>
+                            </div>
+                          </div>
+                          <div class="media mt-3">
+                            <img class="img-fluid mr-3" src="img/house-rent.png">
+                            <div class="media-body">
+                              <h6 class="mb-1"><b>3 Days Trial</b></h6>                          
+                            <p>don’t like the house within 3-days of move in, you can get a refund.<br><b><a href="" style="color:#14756e; ">More Here </a></b></p>
                             </div>
                           </div>
                         </div>
-                        <div class="form-group">
-                          <input type="text" name="" class="form-control" placeholder="Referal code ( if any)">
-                        </div>
-                        <h5 class="request">Schedule a Visit<span class="fa fa-info-circle pull-right"></span> </h5>
-                        <div class="media mt-4">
-                          <img class="img-fluid mr-3" src="img/house-rent.png">
-                          <div class="media-body">
-                            <h6 class="mb-1"><b>6 people scheduled visit.</b></h6>                          
-                            <p><b><a href="" style="color:#14756e; ">Book Now </a></b> to avoid missing out.</p>
+                        <div id="book" class="tab-pane fade">
+                          <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Name*">
                           </div>
-                        </div>
-                        <div class="media mt-3">
-                          <img class="img-fluid mr-3" src="img/house-rent.png">
-                          <div class="media-body">
-                            <h6 class="mb-1"><b>3 Days Trial</b></h6>                          
-                          <p>don’t like the house within 3-days of move in, you can get a refund.<br><b><a href="" style="color:#14756e; ">More Here </a></b></p>
+                          <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Phone*">
                           </div>
-                        </div>
-                      </div>
-                        <div id="menu1" class="tab-pane fade">
-                          <h3>Menu 1</h3>
-                          <p>Some content in menu 1.</p>
+                          <div class="form-group">
+                            <input type="text" name="" class="form-control" placeholder="Email*">
+                          </div>
+                          <div class="row">
+                            <div class="col-6">
+                              <div class="form-group">
+                                <label for="sel1"><span class="fa fa-calendar mr-1"></span>Pick a day</label>
+                                <select class="form-control" id="sel1">
+                                  <option>Today</option>
+                                  <option>Tomorrow</option>                                
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-6">
+                              <div class="form-group">
+                                <label for="sel1"><span class="fa fa-clock-o mr-1"></span>Pick a time</label>
+                                <select class="form-control" id="sel1">
+                                  <option>2:00 PM</option>
+                                  <option>3:00 PM</option>                                
+                                </select>
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                   </div> 
@@ -592,7 +710,11 @@
         <script src="js/wow.min.js"></script>
         <script src="js/myjs.js"></script>
         <script type="text/javascript" src="js/jquery.flexisel.js"></script>
-       
+       <script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
+</script>
     </body>
 </html>
 

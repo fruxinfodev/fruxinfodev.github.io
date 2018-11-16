@@ -105,6 +105,9 @@
 .side-menu .sp_col.collapse.show{
      display: block!important;
 }
+.property-img{
+    height: 361px;
+}
 }
 @media only screen and (max-width: 640px) {
    

@@ -703,9 +703,12 @@ ul.sp_radio li{
     background-image: url(../img/location.png);
 }
 
-.property-page-img{
+.property-img{
     height: 100%;
-    width: 100%;
+    display: block;
+    background-image: url('../img/property-page-1.jpg'); 
+    background-size: cover;
+    background-position: center;
 }
 .property-page ul li{
     display: inline-block;
@@ -734,8 +737,7 @@ ul.star li span{
 .light-box h6{
     color: #0d716a;
     font-size: 13px;
-    font-weight: 600;
-    text-align: center;
+    font-weight: 600;    
 }
 .map-div .tab-view ul {
     box-shadow: none; 
@@ -776,7 +778,16 @@ ul.star li span{
     width: 50%;
     text-align: center;
     list-style: none;
-    padding: 8px;
+    padding: 0px;    
+}
+.visit-form ul li a{
+    width: 100%;
+    display: block;
+    padding: 8px;    
+}
+.visit-form ul li a.active{
+    color: #fff;
+    background-color: #14756e ;
 }
 .visit-form .tab-content{
     background-color: #faf9f9;
@@ -788,6 +799,16 @@ ul.star li span{
 }
 .visit-form .form-control::placeholder{
     color: #a4a3a3;
+}
+.visit-form label{
+    color: #a4a3a3;
+}
+.info-tooltip{
+        position: absolute;
+    right: 6px;
+    top: 9px;
+    color: #a4a3a3;
+    font-size: 18px;
 }
 
 /*
