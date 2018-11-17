@@ -2,12 +2,17 @@
 @font-face { font-family: brown; src: url('../fonts/brown-regular.ttf') format("woff"); } 
 @font-face { font-family: poppins-bold; src: url('../fonts/Poppins-Bold.otf') } 
 @font-face { font-family: poppins-regular; src: url('../fonts/Poppins-regular.ttf') } 
-@font-face { font-family: glyphicons-halflings; src: url('../fonts/glyphicons-halflings-regular.ttf'); } 
+@font-face { font-family: fa-icon; src: url('../fonts/fontawesome-webfont.ttf'); } 
 
 body{
     font-family: poppins-regular;
     background-color: #fff;
    
+}
+::after, ::before{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .nopadding{
     padding: 0px !important;
@@ -577,7 +582,8 @@ ul.sp_radio{
 }
 ul.sp_radio li{
     display: inline-block;
-    padding: 5px 10px!important;
+    padding: 5px 15px!important;
+    margin: 0px 5px;
 }
 
 .faq .side-menu .sp_col.collapse{
@@ -643,13 +649,13 @@ ul.sp_radio li{
 }
 
 .panel-title .trigger:before {
-  content: '\e113';
-  font-family: 'glyphicons-halflings';
+  content: '\f077';
+  font-family: 'fa-icon';
   vertical-align: text-bottom;
 }
 
 .panel-title .trigger.collapsed:before {
-  content: '\e114';
+  content: '\f078';
 }
 .panel h6{
     color: #0d716a;
@@ -666,7 +672,7 @@ ul.sp_radio li{
 .stack-collpase{
     font-size: 12px!important;
 }
-.position-absolute { 
+.position-absolute1 { 
     position: initial!important;
     padding: 10px;
     background-color: #000;

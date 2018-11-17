@@ -24,21 +24,22 @@
     </head>
     <body>
           
-        <section class="header sp_header">
-                <nav class="navbar navbar-expand-md">
-                  <a class="navbar-brand logo" href="#">Dwellerin</a>
+       <section class="header sp_header">
+                <nav class="navbar navbar-expand-lg">
+                  <a class="navbar-nav mr-auto navbar-logo logo d-none" href="#">Dwellerin</a>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                     <span class="navbar-toggler-icon"></span>
                     <span class="navbar-toggler-icon"></span>
                   </button>
                   <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <a class="navbar-nav mr-auto sp_logo logo" href="#">Dwellerin</a>
                     <ul class="navbar-nav">
                       <li class="nav-item">
                         <div class="input-group">
                             <input type="text" class="form-control" placeholder="">
                             <div class="input-group-append footer-search  ">
-                              <button class="btn" type="submit"><i class="fa fa-search"></i></button> 
+                              <button class="btn searchbar-btn" type="submit"><i class="fa fa-search"></i></button> 
                             </div>
                         </div>
                       </li>
@@ -52,7 +53,7 @@
                         <a class="nav-link" href="#">Help</a>
                       </li>
                       <li class="nav-item right-zero">
-                        <a class="nav-link request" href="#">+91 8449346393</a>
+                        <a class="nav-link btn my-btn" href="#"><span class="fa fa-phone mr-2"></span>+91 8449346393</a>
                       </li>    
                     </ul>
                   </div>  
@@ -134,16 +135,16 @@
                                       <p class="mb-0">Do you own multiple apartments, or are you part of a property management company or group?</p>
                                       <ul class="sp_radio">
                                         <li class="border">
-                                          <label class="container">Yes
-                                            <input type="radio" checked="checked" name="radio">
-                                            <span class="checkmark"></span>
-                                          </label>                                          
+                                          <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customRadio" name="example1" value="customEx">
+                                            <label class="custom-control-label" for="customRadio">Yes</label>
+                                          </div>                                 
                                         </li>
                                         <li class="border">
-                                          <label class="container">No
-                                            <input type="radio" name="radio">
-                                            <span class="checkmark"></span>
-                                          </label>                                          
+                                          <div class="custom-control custom-radio">
+                                            <input type="radio" class="custom-control-input" id="customRadio1" name="example1" value="customEx">
+                                            <label class="custom-control-label" for="customRadio1">No</label>
+                                          </div>                                       
                                         </li>
                                       </ul>
                                     </form>
@@ -193,7 +194,7 @@
                 <div class="col-lg-11 col-md-12">
                     <div class="row mt-3 mb-3">
                         <div class="col-md-3 col-sm-6 col-6 mt-5">
-                            <button class="btn my-btn">+91 8449346393</button>
+                            <button class="btn my-btn"><span class="fa fa-phone mr-2"></span>+91 8449346393</button>
                         </div>
                         <div class="col-md-3 col-sm-6 col-12 b-right border-left mt-2 text-left m-zero">
                             <ul class="m-zero ml-3">
@@ -248,7 +249,7 @@
                               <div class="input-group mb-3">
                                 <input type="text" class="form-control" placeholder="">
                                 <div class="input-group-append footer-search  ">
-                                  <button class="btn" type="submit"><i class="fa fa-search"></i></button> 
+                                  <button class="btn searchbar-btn" type="submit"><i class="fa fa-search"></i></button> 
                                 </div>
                               </div>
                             </form>

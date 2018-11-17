@@ -12,12 +12,21 @@
 }
 @media only screen and (max-width: 1200px) {
 }
+@media only screen and (max-width: 995px) {
+		.navbar-logo{
+		display: block!important
+	}
+	.sp_logo{
+		display: none;
+	}
+}
 @media only screen and (max-width: 980px) {
 	.heading-text{
 		font-size: 30px;
 		line-height: 45px;
 		margin-left: 0px;
 	}
+
 	.navbar-collapse {
     
     margin-top: -15px;
@@ -30,10 +39,11 @@
 	list-style: none;
     padding: 0px 15px;
 }
-
 .property-img{
     height: 361px;
 }
+}
+@media only screen and (min-width: 980px) {
 }
 
 @media only screen and (max-width: 800px) {
@@ -48,12 +58,7 @@
 
 }
 @media only screen and (max-width: 767px) {
-	.navbar-logo{
-		display: block!important
-	}
-	.sp_logo{
-		display: none;
-	}
+	
   .navbar-toggleable-sm {
     clear: both;
   }
@@ -100,15 +105,7 @@
 .small-heading{
 	margin-top: 50px;
 }
-.side-menu.border.p-3{
-	padding: 0px !important;
-}
-.side-menu .sp_col.collapse{
-     display: none!important;
-}
-.side-menu .sp_col.collapse.show{
-     display: block!important;
-}
+
 .map-div .tab-view ul li {
     padding: 20px 16px;
 }
@@ -118,7 +115,15 @@
 }
 
 @media only screen and (max-width: 590px) {
-
+.side-menu.border.p-3{
+	padding: 0px !important;
+}
+.side-menu .sp_col.collapse{
+     display: none!important;
+}
+.side-menu .sp_col.collapse.show{
+     display: block!important;
+}
 }
 @media only screen and (max-width: 510px) {
 
