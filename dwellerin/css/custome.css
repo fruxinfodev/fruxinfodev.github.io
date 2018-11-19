@@ -764,7 +764,7 @@ ul.star li span{
     border: none;
     border-bottom: 1px solid #ced4da;
     border-radius: 0px;
-    background-color: inherit;
+    background-color: rgba(249, 248, 248, 1);
     padding-left: 0px;
     font-size: 14px;
 }
@@ -846,7 +846,7 @@ ul.star li span{
 }
 .search-result p{
     color: #9e9e9e;
-    font-size: 12px;
+    font-size: 13px;
     margin-bottom: 0px;
 }
 .search-result .breadcrumb{
@@ -871,24 +871,26 @@ ul.star li span{
 }
 .search-result .dropdown button , .search-result .dropdown button:focus{
     color: #7e7e7e;
-    background-color: inherit;
+    background-color: #fff;
     border: 2px solid #ededed;
     box-shadow: none;
+    height: 38px;
 }
-.search-result .sp_drop button{
+.search-result .sp_drop button ,.search-result .sp_drop button:focus{
     background-color: #f6f6f6!important;
     border: none;
+    padding: 8px 15px;
 }
 .sp_drop_div{
    background-color: #f6f6f6!important;
-   padding: 7px 10px;
+   padding: 9px 10px;
    color: #7e7e7e!important;
    font-size: .9rem!important;
 }
 .search-result .btn-primary:not(:disabled):not(.disabled).active, .search-result .btn-primary:not(:disabled):not(.disabled):active, .search-result .show>.btn-primary.dropdown-toggle {
     color: #7e7e7e;
-    background-color: inherit;
-    border-color: #ebebeb;
+    background-color: #fff;
+    border-color: #ededed;
 }
 .search-result .btn-primary:not(:disabled):not(.disabled).active:focus, .search-result .btn-primary:not(:disabled):not(.disabled):active:focus, .search-result .show>.btn-primary.dropdown-toggle:focus{
     box-shadow: none;    
@@ -900,8 +902,40 @@ ul.star li span{
 ul.dropdowns li{
  list-style: none;
  display: inline-block;
- margin: 0px 2px;
+ margin: 0px 1px;
 }
+.search-result .light-box{
+    background-color: inherit;
+}
+.search-result h4 span{
+    font-size: 12px;
+}
+.star a{
+    font-size: 15px;
+    color: #444343;
+    font-weight: 100!important;
+}
+ul.like li{
+    display: inline-block;
+    margin: 0px 8px;
+    font-size: 26px;
+    color: #9d9d9d;
+}
+ul.distance li{
+    display: inline-block;
+    padding: 0px 13px;
+}
+.distance p{
+    color: #6d6d6d;    
+}
+.distance p span{
+    color: #12746d;
+    font-size: 17px;
+}
+.distance .media span{
+    color: #ff5a5f;
+}
+
 /*
 .visit-form .nav-pills li.active{
     background-color: #14756e;
@@ -916,7 +950,7 @@ ul.dropdowns li{
         }
         #myScrollspy .nav-pills .nav-link.active, #myScrollspy .nav-pills .show>.nav-link {
     color: #252a2d;
-    background-color: #d4d3d347;
+    background-color: #e6e6e6;;
     padding: 9px 15px;
     border-radius: 0px;
     }
@@ -959,4 +993,44 @@ ul.dropdowns li{
 .rentpayment-div{
   text-align: center;
   margin-bottom: 10px;
+}
+
+.compare p{
+    color: #7e7d7d;
+    font-size: 14px;
+}
+.compare-img{
+ height: 150px;
+ width: 200px;
+ background-size: cover;
+ background-position: center;
+ margin: auto;
+}
+.compare-img.img-1{
+    background-image: url('../img/property-1.jpg');
+}
+.compare-img.img-2{
+    background-image: url('../img/property-2.jpg');
+}
+.compare-img.img-3{
+    background-image: url('../img/property-3.jpg');
+}
+.sp_col .col{
+    min-width: 200px;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.sp_col tr{
+    vertical-align: text-top;
+}
+.sp_col h6{
+    margin-bottom: 0px;
+    font-size: 15px;
+}
+.table-bordered .border-top-none td{
+    border-top: none;
+}
+.border-bottom-none td{
+    border-bottom: none;
 }
