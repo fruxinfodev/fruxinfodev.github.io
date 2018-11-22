@@ -47,6 +47,12 @@
 .footer .res-btn{
     text-align: left;
 }
+#property .modal-dialog {
+    height: calc(100% - 50%);
+}
+.sp_height{
+	height: 100%;
+}
 }
 @media only screen and (min-width: 980px) {
 }
@@ -114,6 +120,27 @@
 .map-div .tab-view ul li {
     padding: 20px 16px;
 }
+
+#property .modal-body {
+    padding: .5rem;
+}
+#property .modal-dialog {
+    height: calc(100% - 56px);
+}
+
+.sp_height{
+	height: auto;
+}
+#property .border-left{
+	border-left: 0px solid #000!important;
+}
+#property .col-md-4 {
+	height: 50%;
+}
+#property .col-md-4.pl-5{
+	padding-left: 0px!important;
+} 
+
 }
 @media only screen and (max-width: 640px) {
    
