@@ -21,6 +21,7 @@
         <script src="js/slick.min.js"></script>
         <script src="js/jquery.flexisel.js"></script>
         <script src="js/myjs.js"></script>
+        <script src="js/jquery.sticky-kit.js"></script>
     </head>
     <body>
           
@@ -84,7 +85,7 @@
                       <p class="mt-4">271 students saved this property</p>
                   </div>
                   <div class="col-lg-6 col-sm-12 col-12" style="position: relative;">
-                    <div class="property-img"></div>
+                    <div class="property-img" data-toggle="modal" data-target="#property"></div>
                     <div class="photos-count">
                       <p><span class="fa fa-camera mr-3" data-toggle="modal" data-target="#property"></span>20</p>
                     </div>
@@ -127,24 +128,44 @@
                                   </div>
                                   <div  id="main"  class="sidebar-category sidebar-default sp_col collapse d-block">        
                                     <div class="category-content">
-                                      <ul class="nav flex-column">
+                                      <ul class="nav flex-column popup-inner-ul">
                                         <li class="nav-item">
-                                          <a href="#" class="nav-link active">
+                                          <a href="#" class=" active">
                                             Bedrooms
                                           </a>
+                                          <ul class="list-unstyled list-inline popup-inner-thumbline">
+                                            <li class="list-inline-item">
+                                               <a href="#"><img src="img/img-slider-3.jpg" class="img-fluid"></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                               <a href="#"><img src="img/img-slider-3.jpg" class="img-fluid"></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                               <a href="#"><img src="img/img-slider-3.jpg" class="img-fluid"></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                               <a href="#"><img src="img/img-slider-3.jpg" class="img-fluid"></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                               <a href="#"><img src="img/img-slider-3.jpg" class="img-fluid"></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                               <a href="#"><img src="img/img-slider-3.jpg" class="img-fluid"></a>
+                                            </li>
+                                          </ul>
                                         </li>
                                         <li class="nav-item">
-                                          <a href="#" class="nav-link active">
+                                          <a href="#" class=" active">
                                             Kitchen
                                           </a>
                                         </li>
                                         <li class="nav-item">
-                                          <a href="#" class="nav-link active">
+                                          <a href="#" class=" active">
                                             Hall
                                           </a>
                                         </li>
                                         <li class="nav-item">
-                                          <a href="#" class="nav-link active">
+                                          <a href="#" class=" active">
                                             Gallary
                                           </a>
                                         </li>                                        
@@ -191,12 +212,12 @@
             </div>
         </section>
 
-         <section class="section-padding pt-0 pb-0">
+         <section class="section-padding pt-0 pb-0 middle-div" >
             <div class="row d-flex justify-content-center">
             <div class="col-lg-11 col-md-11 col-12">
               <div class="row">
                   <div class="col-md-12 col-12 mb-2 border pl-0 pr-0">
-                      <div class=" box-text p-0">
+                      <div class=" box-text p-0 tab-fix-dix">
                         <div class="tab-view"> 
                           <ul class="nav nav-tabs">
                             <li class="active">
@@ -224,11 +245,11 @@
                               <p class="btn my-btn mb-0" style="margin-top: -8px;">Compare Property</p>
                             </li>
                           </ul>
-
-                          <div class="tab-content">
-                            <div class="tab-pane active" id="1">
+                          <div class="main-fix">
+                              <div class="tab-content">
+                              <div class="tab-pane active" id="1">
                               <div class="row form-row">
-                                <div class="col-lg-7 col-12">
+                                <div class="">
                                   <h6><b>About the house</b></h6>
                                   <p>Located at Marathahalli, Bangalore, this comfortable 3 BHK fully_furnished house which is priced at ₹8000 per bed with a security deposit of ₹16000, with a floor size of 1800 sq.ft. This house features Modular kitchen, Gas stove, Washing machine, Fridge, Sofa, and Dining table and more. The house features three bathrooms. Book now and enjoy the comfort!</p>
                                   <div class="row mt-5 mb-5">
@@ -273,9 +294,240 @@
                                     </div>                                   
                                   </div>                                
                                 </div>
-                                <div class="col-md-1 col-12">
-                                </div>                                
-                                <div class="col-lg-4 col-sm-12 col-12 visit-form">
+                              </div>
+                            </div>
+                            <div class="tab-pane" id="2">
+                              <h6>Welcome XXXXXX!</h6>
+                              <p>Start by telling us your property's name, contact details, and address.</p>
+                            </div>
+                            <div class="tab-pane" id="3">
+                              <h6>Welcome XXXXXX!</h6>
+                            </div>
+                            <div class="tab-pane" id="4">
+                              <h6>Welcome XXXXXX!</h6>
+                              <p>Start by telling us your property's name, contact details, and address.</p>
+                            </div>
+                            <div class="tab-pane" id="5">
+                              <h6>Welcome XXXXXX!</h6>
+                            </div>
+                            <div class="tab-pane" id="6">
+                              <h6>Welcome XXXXXX!</h6>
+                              <p>Start by telling us your property's name, contact details, and address.</p>
+                            </div>
+                            <div class="tab-pane" id="7">
+                              <h6>Welcome XXXXXX!</h6>
+                            </div>
+                             
+                          </div>
+                          <div class="clearfix">
+                          </div>
+                          <hr>
+
+                            <!-- map section start here -->
+                            <div class="map-div">
+                            <div class="absolute-dropdown1">
+                      <select class="form-control" id="">
+                        <option>Aminities</option>
+                        <option>Aminities</option>
+                      </select>
+                    </div>
+                    <div class="absolute-dropdown2">
+                      <select class="form-control" id="">
+                        <option>Aminities</option>
+                        <option>Aminities</option>
+                      </select>
+                    </div>
+                    <div class="absolute-dropdown3">
+                      <select class="form-control" id="">
+                        <option>Aminities</option>
+                        <option>Aminities</option>
+                      </select>
+                    </div>
+                    <div class="absolute-dropdown4">
+                      <select class="form-control" id="">
+                        <option>Aminities</option>
+                        <option>Aminities</option>
+                      </select>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14689.232953021197!2d72.522719!3d23.012452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6a7abc63d4e564!2sFruxinfo+Private+Limited!5e0!3m2!1sen!2sin!4v1542267029068" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="tab-view"> 
+                      <ul class="nav nav-tabs">
+                        <li class="active">
+                          <a  href="#m1" data-toggle="tab" class="active"><b>Commute</b></a>
+                        </li>
+                        <li>
+                          <a href="#m2" data-toggle="tab"><b>Essential</b></a>
+                        </li>
+                        <li>
+                          <a href="#m3" data-toggle="tab"><b>LifeStyle</b></a>
+                        </li>                            
+                      </ul>
+
+                      <div class="tab-content pb-0  ">
+                        <div class="tab-pane active" id="m1">
+                          <h6>5 Train Stations</h6>
+                          <p>Nearest : Race Course Metro Station <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
+                          <h6 class="mt-2">5 Train Stations</h6>
+                          <p>Nearest : Race Course Metro Station  <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
+                          <h6 class="mt-2">5 Train Stations</h6>
+                          <p>Nearest : Race Course Metro Station  <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
+                        </div>
+                        <div class="tab-pane" id="m2">
+                          <h6>5 Train Stations</h6>
+                          <p>Nearest : Race Course Metro Station <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
+                        </div>
+                        <div class="tab-pane" id="m3">
+                          <h6>5 Train Stations</h6>
+                          <p>Nearest : Race Course Metro Station <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
+                          <h6 class="mt-2">5 Train Stations</h6>
+                          <p>Nearest : Race Course Metro Station  <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="clearfix">
+                          </div>
+                  <hr>
+                    <!-- review div start here -->
+                    <div class="property-page">
+                      <div class="row form-row ">
+                  <div class="col-md-12 col-sm-12 col-12">
+                      <h5 class="mb-3 mr-4" style="float: left; font-weight: 600; color:#444343;">Review</h5>
+                      <ul class="mb-5 star" style="float: left">
+                        <li><span class="fa fa-star"></span></li>
+                        <li><span class="fa fa-star"></span></li>
+                        <li><span class="fa fa-star-o"></span></li>
+                        <li><span class="fa fa-star-o"></span></li>
+                        <li><span class="fa fa-star-o"></span></li>
+                        <li><a href=""><small>( 3 Review )</small></a></li>
+                      </ul>
+                      <div class="clearfix"></div>                      
+                  </div>                                   
+              </div>
+              <div class="row">
+                <div class="col-md-4 col-12">
+                  <ul class="star">
+                    <li class="mr-3"><a href="">Location</a></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                  <ul class="star">
+                    <li class="mr-3"><a href="">Location</a></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                  <ul class="star">
+                    <li class="mr-3"><a href="">Location</a></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                  <ul class="star">
+                    <li class="mr-3"><a href="">Location</a></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                  <ul class="star">
+                    <li class="mr-3"><a href="">Location</a></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                  <ul class="star">
+                    <li class="mr-3"><a href="">Location</a></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                  <ul class="star">
+                    <li class="mr-3"><a href="">Location</a></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                  </ul>
+                </div>
+                <div class="col-md-4 col-12">
+                  <ul class="star">
+                    <li class="mr-3"><a href="">Location</a></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                    <li><span class="fa fa-star-o"></span></li>
+                  </ul>
+                </div>
+
+              </div>
+              <div class="row d-flex justify-content-center review mt-5 mb-5">
+                <div class="col-sm-7 col-12 p-0">
+                  <div class="form-group">
+                    <input type="text" name="" class="cust-review-input form-control" placeholder="Write review">
+                  </div>
+                </div>
+                <div class="col-sm-2 col-12 p-0 pl-2">
+                  <button class="btn my-btn">Submit</button>
+                </div>
+              </div>
+              <div class="cust-view mt-4">
+                <img src="img/property-1.jpg" class="img-fluid mr-3" style="float: left">
+                <h6 class="pt-2 mb-0">customer Name</h6>
+                <ul class="star">
+                  <li class="mr-2"><a href=""><small>September 2018</small></a></li>
+                  <li><span class="fa fa-star"></span></li>
+                  <li><span class="fa fa-star"></span></li>
+                  <li><span class="fa fa-star-o"></span></li>
+                  <li><span class="fa fa-star-o"></span></li>
+                  <li><span class="fa fa-star-o"></span></li>
+                </ul>
+                <p class="mt-4">This house is hand-picked by us based on their prime locations, amenities and quality of neighbourhood.</p>
+              </div>
+
+              <div class="cust-view ml-5 mt-4">
+                <img src="img/property-1.jpg" class="img-fluid mr-3" style="float: left">
+                <h6 class="pt-2 mb-0">customer Name</h6>
+                <ul class="star">
+                  <li class="mr-2"><a href=""><small>September 2018</small></a></li>
+                  <li><span class="fa fa-star"></span></li>
+                  <li><span class="fa fa-star"></span></li>
+                  <li><span class="fa fa-star-o"></span></li>
+                  <li><span class="fa fa-star-o"></span></li>
+                  <li><span class="fa fa-star-o"></span></li>
+                </ul>
+                <p class="mt-4">This house is hand-picked by us based on their prime locations, amenities and quality of neighbourhood.</p>
+              </div>
+                    </div>
+                          </div>
+                          <div class="sidebar-fix ">
+                            <div class="visit-form">
                                     <ul class="nav nav-pills">
                                       <li class="border-right"><a data-toggle="pill" href="#visit" class="active show">Visit the House</a></li>
                                       <li><a data-toggle="pill" href="#book">Book Now</a></li>
@@ -365,340 +617,20 @@
                                         </div>
                                       </div>
                                     </div>
-                                </div>                                
-                              </div>
-                            </div>
-                            <div class="tab-pane" id="2">
-                              <h6>Welcome XXXXXX!</h6>
-                              <p>Start by telling us your property's name, contact details, and address.</p>
-                            </div>
-                            <div class="tab-pane" id="3">
-                              <h6>Welcome XXXXXX!</h6>
-                            </div>
-                            <div class="tab-pane" id="4">
-                              <h6>Welcome XXXXXX!</h6>
-                              <p>Start by telling us your property's name, contact details, and address.</p>
-                            </div>
-                            <div class="tab-pane" id="5">
-                              <h6>Welcome XXXXXX!</h6>
-                            </div>
-                            <div class="tab-pane" id="6">
-                              <h6>Welcome XXXXXX!</h6>
-                              <p>Start by telling us your property's name, contact details, and address.</p>
-                            </div>
-                            <div class="tab-pane" id="7">
-                              <h6>Welcome XXXXXX!</h6>
-                            </div>
+                                </div> 
                           </div>
-                        </div>
 
+
+
+
+
+                        </div>
                       </div>
                   </div>
               </div>
             </div>
             </div>
         </section>
-
-        <section class="section-padding map-div">
-            <div class="row d-flex justify-content-center">
-            <div class="col-lg-11 col-md-11 col-12 border">              
-              <div class="row">
-                  <div class="col-lg-8 col-sm-12 col-12 p-3">
-                    <div class="absolute-dropdown1">
-                      <select class="form-control" id="">
-                        <option>Aminities</option>
-                        <option>Aminities</option>
-                      </select>
-                    </div>
-                    <div class="absolute-dropdown2">
-                      <select class="form-control" id="">
-                        <option>Aminities</option>
-                        <option>Aminities</option>
-                      </select>
-                    </div>
-                    <div class="absolute-dropdown3">
-                      <select class="form-control" id="">
-                        <option>Aminities</option>
-                        <option>Aminities</option>
-                      </select>
-                    </div>
-                    <div class="absolute-dropdown4">
-                      <select class="form-control" id="">
-                        <option>Aminities</option>
-                        <option>Aminities</option>
-                      </select>
-                    </div>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14689.232953021197!2d72.522719!3d23.012452!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6a7abc63d4e564!2sFruxinfo+Private+Limited!5e0!3m2!1sen!2sin!4v1542267029068" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                    <div class="tab-view"> 
-                      <ul class="nav nav-tabs">
-                        <li class="active">
-                          <a  href="#m1" data-toggle="tab" class="active"><b>Commute</b></a>
-                        </li>
-                        <li>
-                          <a href="#m2" data-toggle="tab"><b>Essential</b></a>
-                        </li>
-                        <li>
-                          <a href="#m3" data-toggle="tab"><b>LifeStyle</b></a>
-                        </li>                            
-                      </ul>
-
-                      <div class="tab-content pb-0  ">
-                        <div class="tab-pane active" id="m1">
-                          <h6>5 Train Stations</h6>
-                          <p>Nearest : Race Course Metro Station <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
-                          <h6 class="mt-2">5 Train Stations</h6>
-                          <p>Nearest : Race Course Metro Station  <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
-                          <h6 class="mt-2">5 Train Stations</h6>
-                          <p>Nearest : Race Course Metro Station  <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
-                        </div>
-                        <div class="tab-pane" id="m2">
-                          <h6>5 Train Stations</h6>
-                          <p>Nearest : Race Course Metro Station <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
-                        </div>
-                        <div class="tab-pane" id="m3">
-                          <h6>5 Train Stations</h6>
-                          <p>Nearest : Race Course Metro Station <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
-                          <h6 class="mt-2">5 Train Stations</h6>
-                          <p>Nearest : Race Course Metro Station  <span class="fa fa-circle"></span> 2km <span class="fa fa-circle"></span>  13min</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4 col-sm-12 col-12 p-3 visit-form">
-                      <ul class="nav nav-pills">
-                        <li class="border-right"><a data-toggle="pill" href="#visit1" class="active show">Visit the House</a></li>
-                        <li><a data-toggle="pill" href="#book1">Book Now</a></li>
-                      </ul>
-                      <div class="tab-content review">
-                        <div id="visit1" class="tab-pane fade in active show">
-                          <div class="form-group">
-                            <input type="text" name="" class="form-control" placeholder="Name*">
-                          </div>
-                          <div class="form-group">
-                            <input type="text" name="" class="form-control" placeholder="Phone*">
-                          </div>
-                          <div class="form-group">
-                            <input type="text" name="" class="form-control" placeholder="Email*">
-                          </div>
-                          <div class="row">
-                            <div class="col-6">
-                              <div class="form-group">
-                                <label for=""><span class="fa fa-calendar mr-1"></span>Pick a day</label>
-                                <select class="form-control" id="">
-                                  <option>Today</option>
-                                  <option>Tomorrow</option>                                
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <div class="form-group">
-                                <label for=""><span class="fa fa-clock-o mr-1"></span>Pick a time</label>
-                                <select class="form-control" id="">
-                                  <option>2:00 PM</option>
-                                  <option>3:00 PM</option>                                
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="form-group" style="position: relative;">
-                            <input type="text" name="" class="form-control" placeholder="Referal code ( if any)">
-                            <a href="#" data-toggle="tooltip"  data-placement="bottom" title="Schedule a Visit!" class="pull-right"><span class="fa fa-info-circle info-tooltip"></span></a>
-                          </div>
-                          <h6 class="request" style="font-size: 1rem;">Schedule a Visit
-                            <a href="#" data-toggle="tooltip" title="Schedule a Visit!" class="pull-right"><span class="fa fa-info-circle"></span></a>
-                          </h6>
-                          <div class="media mt-4">
-                            <img class="img-fluid mr-3" src="img/house-rent.png">
-                            <div class="media-body">
-                              <h6 class="mb-1"><b>6 people scheduled visit.</b></h6>                          
-                              <p><b><a href="" style="color:#14756e; ">Book Now </a></b> to avoid missing out.</p>
-                            </div>
-                          </div>
-                          <div class="media mt-3">
-                            <img class="img-fluid mr-3" src="img/house-rent.png">
-                            <div class="media-body">
-                              <h6 class="mb-1"><b>3 Days Trial</b></h6>                          
-                            <p>don’t like the house within 3-days of move in, you can get a refund.<br><b><a href="" style="color:#14756e; ">More Here </a></b></p>
-                            </div>
-                          </div>
-                        </div>
-                        <div id="book1" class="tab-pane fade">
-                          <div class="form-group">
-                            <input type="text" name="" class="form-control" placeholder="Name*">
-                          </div>
-                          <div class="form-group">
-                            <input type="text" name="" class="form-control" placeholder="Phone*">
-                          </div>
-                          <div class="form-group">
-                            <input type="text" name="" class="form-control" placeholder="Email*">
-                          </div>
-                          <div class="row">
-                            <div class="col-6">
-                              <div class="form-group">
-                                <label for=""><span class="fa fa-calendar mr-1"></span>Pick a day</label>
-                                <select class="form-control" id="">
-                                  <option>Today</option>
-                                  <option>Tomorrow</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-6">
-                              <div class="form-group">
-                                <label for=""><span class="fa fa-clock-o mr-1"></span>Pick a time</label>
-                                <select class="form-control" id="">
-                                  <option>2:00 PM</option>
-                                  <option>3:00 PM</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                  </div> 
-              </div>
-            </div>
-            </div>
-        </section>
-
-        <section class="section-padding property-page pt-0">
-            <div class="row d-flex justify-content-center">
-            <div class="col-lg-11 col-md-11 col-12 border">              
-              <div class="row form-row ">
-                  <div class="col-md-12 col-sm-12 col-12 p-3">
-                      <h5 class="mb-3 mr-4" style="float: left; font-weight: 600; color:#444343;">Review</h5>
-                      <ul class="mb-5 star" style="float: left">
-                        <li><span class="fa fa-star"></span></li>
-                        <li><span class="fa fa-star"></span></li>
-                        <li><span class="fa fa-star-o"></span></li>
-                        <li><span class="fa fa-star-o"></span></li>
-                        <li><span class="fa fa-star-o"></span></li>
-                        <li><a href=""><small>( 3 Review )</small></a></li>
-                      </ul>
-                      <div class="clearfix"></div>                      
-                  </div>                                   
-              </div>
-              <div class="row">
-                <div class="col-md-3 col-6">
-                  <ul class="star">
-                    <li class="mr-3"><a href="">Location</a></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                  </ul>
-                </div>
-                <div class="col-md-3 col-6">
-                  <ul class="star">
-                    <li class="mr-3"><a href="">Location</a></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                  </ul>
-                </div>
-                <div class="col-md-3 col-6">
-                  <ul class="star">
-                    <li class="mr-3"><a href="">Location</a></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                  </ul>
-                </div>
-                <div class="col-md-3 col-6">
-                  <ul class="star">
-                    <li class="mr-3"><a href="">Location</a></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                  </ul>
-                </div>
-                <div class="col-md-3 col-6">
-                  <ul class="star">
-                    <li class="mr-3"><a href="">Location</a></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                  </ul>
-                </div>
-                <div class="col-md-3 col-6">
-                  <ul class="star">
-                    <li class="mr-3"><a href="">Location</a></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                  </ul>
-                </div>
-                <div class="col-md-3 col-6">
-                  <ul class="star">
-                    <li class="mr-3"><a href="">Location</a></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                  </ul>
-                </div>
-                <div class="col-md-3 col-6">
-                  <ul class="star">
-                    <li class="mr-3"><a href="">Location</a></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                    <li><span class="fa fa-star-o"></span></li>
-                  </ul>
-                </div>
-              </div>
-              <div class="row d-flex justify-content-center review mt-5 mb-5">
-                <div class="col-sm-6 col-12">
-                  <div class="form-group">
-                    <input type="text" name="" class="form-control" placeholder="Write review">
-                  </div>
-                </div>
-                <div class="col-sm-2 col-12 text-center">
-                  <button class="btn my-btn">Submit</button>
-                </div>
-              </div>
-              <div class="cust-view mt-4">
-                <img src="img/property-1.jpg" class="img-fluid mr-3" style="float: left">
-                <h6 class="pt-2 mb-0">customer Name</h6>
-                <ul class="star">
-                  <li class="mr-2"><a href=""><small>September 2018</small></a></li>
-                  <li><span class="fa fa-star"></span></li>
-                  <li><span class="fa fa-star"></span></li>
-                  <li><span class="fa fa-star-o"></span></li>
-                  <li><span class="fa fa-star-o"></span></li>
-                  <li><span class="fa fa-star-o"></span></li>
-                </ul>
-                <p class="mt-4">This house is hand-picked by us based on their prime locations, amenities and quality of neighbourhood.</p>
-              </div>
-              <div class="cust-view ml-5 mt-4">
-                <img src="img/property-1.jpg" class="img-fluid mr-3" style="float: left">
-                <h6 class="pt-2 mb-0">customer Name</h6>
-                <ul class="star">
-                  <li class="mr-2"><a href=""><small>September 2018</small></a></li>
-                  <li><span class="fa fa-star"></span></li>
-                  <li><span class="fa fa-star"></span></li>
-                  <li><span class="fa fa-star-o"></span></li>
-                  <li><span class="fa fa-star-o"></span></li>
-                  <li><span class="fa fa-star-o"></span></li>
-                </ul>
-                <p class="mt-4">This house is hand-picked by us based on their prime locations, amenities and quality of neighbourhood.</p>
-              </div>
-            </div>
-            </div>
-        </section>
-
         <section class="footer pt-0">
             <div class="row d-flex justify-content-center border-bottom">
                 <div class="col-lg-11 col-md-12">
@@ -811,6 +743,29 @@
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 });
+$(".sidebar-fix").stick_in_parent({
+    offset_top: 10
+});
+
+$(function(){
+  $(window).scroll(function(){
+    if( $(".sidebar-fix").css('position') == 'fixed') {
+          $(".sidebar-fix").addClass('sidebar_fixed_right')
+          $(".sidebar-fix").removeClass('sidebar_absolute_right')
+      }
+      else if( $(".sidebar-fix").css('position') == 'absolute') {
+          $(".sidebar-fix").addClass('sidebar_absolute_right')
+          $(".sidebar-fix").removeClass('sidebar_fixed_right')
+      }
+
+      
+  });
+});
+
+$("").stick_in_parent({
+    offset_top: 10
+});
+
 </script>
     </body>
 </html>
