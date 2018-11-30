@@ -1,0 +1,134 @@
+/*--------------------------------------------------------------
+15. Media queries
+--------------------------------------------------------------*/
+@media only screen and (min-device-width: 1400px) and (max-device-width: 1600px){ 
+   
+
+}
+@media only screen and (min-width : 1600px) {
+
+}
+@media only screen and (max-width: 1200px) {
+	.navbar ul li{
+	    margin: 0px 30px;
+	}
+	.navbar ul li a{
+	    font-size: 17px;
+	}
+}
+@media only screen and (max-width: 980px) {
+	.carousel-caption{
+		max-width: 400px;
+	}
+	.carousel-caption h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+	}
+	.carousel-caption p{
+		display: none;
+	} 
+	.quote h1 {
+    	font-size: 39px;
+    }
+    .quote p {
+    	font-size: 17px;
+    }
+    .inquiry-bg {
+    	 border-top-left-radius: 0px; 
+    }
+    .navbar ul{
+   position: absolute;
+    top: -12px;    
+	}
+	.navbar ul li{
+	    margin: 0px 15px;
+	}
+	.navbar ul li a{
+	    font-size: 16px;
+	}
+	ul.icon-list li {
+	    margin: 0px 7px;	    
+		margin-top: 1rem;
+	    margin-bottom: 0.5rem;
+	}
+	.nbs-flexisel-nav-right{
+    right: 2%;
+	}
+	.nbs-flexisel-nav-left{
+	    right: 10%;
+	}
+}
+@media only screen and (max-width: 800px) {
+
+}
+@media only screen and (max-width: 767px) {	
+    .footer ul li{
+    	text-align: left;
+    }
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 40px;
+    height: 40px;
+	}
+	.client-name span {    
+    font-size: 22px;
+	}
+	.client-name b {    
+    font-size: 17px;
+	}
+	.client-name p {    
+    font-size: 13px;
+	}
+	.navbar ul{
+   		position: initial;
+	}
+	.nbs-flexisel-nav-left, .nbs-flexisel-nav-right , li.nav-item.active a:before , li.nav-item:hover a:before {
+		display: none;
+	}
+}
+
+
+@media only screen and (min-width: 768px) {
+  
+}
+@media only screen and (max-width: 640px) {
+   .carousel-caption h1 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    max-width: 47%;
+	}
+	.carousel-caption p{
+		display: none;
+	}
+
+}
+    
+
+@media only screen and (max-width: 590px) {
+}
+@media only screen and (max-width: 510px) {
+}
+@media only screen and (max-width: 480px) {
+  .client-name {
+		max-width: 227px;
+	}
+	.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 25px;
+    height: 25px;
+	}
+}
+@media only screen and (max-width: 400px) {
+
+}
+@media screen and (max-width: 375px){
+
+}
+@media screen and (max-width: 321px){
+
+}
+
+
+
+
+
+
+
